@@ -25,6 +25,8 @@
         }
 
         .mobile-menu {
+            position: absolute;
+            top: 60px;
             padding: 24px;
         }
 
@@ -58,10 +60,24 @@
             color: var(--hospital-green) !important;
         }
 
+        @media (max-width: 640px) {
+            .desktop-menu {
+                display: none;
+            }
+        }
+
+        @media (min-width: 641px) {
+            .mobile-menu {
+                display: none;
+            }
+        }
+
+        
+
     </style>
 </head>
 <body>
-    <div class="mobile-menu">
+    <div class="mobile-menu inactive">
         <ul>
             <li>
                 <a href="/">CATEGORIES</a>
